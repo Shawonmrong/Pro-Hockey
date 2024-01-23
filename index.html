@@ -49,7 +49,7 @@
   </head>
   <body class="font.manrope">
     <header>
-      <nav class="container mx-auto">
+      <nav class="container mx-auto lg:px-24 px-8 my-8">
         <div class="navbar bg-base-100 h-20">
           <div class="navbar-start">
             <div class="dropdown">
@@ -117,8 +117,8 @@
 
     <!-- banner Section  -->
     <section>
-      <div class="container mx-auto">
-        <div class="carousel w-full">
+      <div class="container mx-auto lg:px-24 px-8">
+        <div class="carousel w-full bg-[]">
           <div id="slide1" class="carousel-item relative w-full">
             <img src="./Images/hoc-1.jpg" class="w-full" />
             <div
@@ -169,12 +169,21 @@
         Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
         placerat dolor. Purus urna in sit nullam proin.
       </p>
+      <div class="container mx-auto flex justify-around items-center">
+        
+       <div class="radial-progress" style="--value:20;" role="progressbar">20%</div>
+       
+       <div class="radial-progress" style="--value:60;" role="progressbar">60%</div>
+       <div class="radial-progress" style="--value:80;" role="progressbar">80%</div>
+       <div class="radial-progress" style="--value:100;" role="progressbar">100%</div>
+
+      </div>
     </section>
     <!-- Program Sections  -->
 
     <section>
       <div>
-        <div class="">
+        <div class="container mx-auto pt-10">
           <h1 class="text-5xl mb-4 font-semibold text-center">
             Program Sections
           </h1>
@@ -182,6 +191,13 @@
             Dit amet consectetur. Condimentum dignissim adipiscing aliquam
             turpis placerat dolor. Purus urna in sit nullam proin.
           </p>
+        </div>
+        <div class="container mx-auto grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8 pb-10">
+          <div class="h-60 rounded-lg bg-gray-200"></div>
+          <div class="h-60 rounded-lg bg-gray-200"></div>
+        </div>
+        <div class="container mx-auto grid grid-cols-1 gap-4 lg:grid-cols-1 lg:gap-8">
+          <div class="h-60 rounded-lg bg-gray-200"></div>
         </div>
       </div>
     </section>
@@ -198,6 +214,53 @@
             turpis placerat dolor. Purus urna in sit nullam proin.
           </p>
         </div>
+        <div class="container mx-auto">
+          <div class="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8 pb-4">
+            <div class="h-44 rounded-lg bg-gray-200">
+              <div class="">
+                <img src="./Images/5.png" alt="">
+                
+              </div>
+              
+            </div>
+            <div class="h-44 rounded-lg bg-gray-200">
+              <div class="">
+                <img src="./Images/5.png" alt="">
+                
+              </div>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8 pb-4">
+            <div class="h-44 rounded-lg bg-gray-200">
+              <div class="">
+                <img src="./Images/5.png" alt="">
+                
+              </div>
+            </div>
+            <div class="h-44 rounded-lg bg-gray-200">
+              <div class="">
+                <img src="./Images/5.png" alt="">
+                
+              </div>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8 pb-4">
+            <div class="h-44 rounded-lg bg-gray-200">
+              <div class="">
+                <img src="./Images/5.png" alt="">
+                
+              </div>
+            </div>
+            <div class="h-44 rounded-lg bg-gray-200">
+              <div class="">
+                <img src="./Images/5.png" alt="">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
       </div>
     </section>
 
@@ -214,34 +277,240 @@
             turpis placerat dolor. Purus urna in sit nullam proin.
           </p>
         </div>
+        <div class="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-8">
+          <!-- faq logo item  -->
 
-        <div class="collapse collapse-plus bg-base-200">
-          <input type="radio" name="my-accordion-3" checked="checked" />
-          <div class="collapse-title text-xl font-medium">
-            Click to open this one and close others
-          </div>
-          <div class="collapse-content">
-            <p>hello</p>
+        <div class="flex justify-center items-center bg-gray-200">
+          <img src="./Images/11.png" alt="">
+
+        </div>
+
+        <!-- accordian items  -->
+        <div class="flow-root">
+          <div class="-my-8 divide-y divide-gray-100">
+            <details class="group py-8 [&_summary::-webkit-details-marker]:hidden" open>
+              <summary class="flex cursor-pointer items-center justify-between text-gray-900">
+                <h2 class="text-lg font-medium">Lorem ipsum dolor sit amet consectetur adipisicing?</h2>
+        
+                <span class="relative h-5 w-5 shrink-0">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="absolute inset-0 h-5 w-5 opacity-100 group-open:opacity-0"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+        
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="absolute inset-0 h-5 w-5 opacity-0 group-open:opacity-100"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </span>
+              </summary>
+        
+              <p class="mt-4 leading-relaxed text-gray-700">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis molestias culpa
+                in, recusandae laboriosam neque aliquid libero nesciunt voluptate dicta quo officiis
+                explicabo consequuntur distinctio corporis earum similique!
+              </p>
+            </details>
+        
+            <details class="group py-8 [&_summary::-webkit-details-marker]:hidden">
+              <summary class="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900">
+                <h2 class="text-lg font-medium">Lorem ipsum dolor sit amet consectetur adipisicing?</h2>
+        
+                <span class="relative h-5 w-5 shrink-0">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="absolute inset-0 h-5 w-5 opacity-100 group-open:opacity-0"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+        
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="absolute inset-0 h-5 w-5 opacity-0 group-open:opacity-100"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </span>
+              </summary>
+        
+              <p class="mt-4 leading-relaxed text-gray-700">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis molestias culpa
+                in, recusandae laboriosam neque aliquid libero nesciunt voluptate dicta quo officiis
+                explicabo consequuntur distinctio corporis earum similique!
+              </p>
+            </details>
+        
+            <details class="group py-8 [&_summary::-webkit-details-marker]:hidden">
+              <summary class="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900">
+                <h2 class="text-lg font-medium">Lorem ipsum dolor sit amet consectetur adipisicing?</h2>
+        
+                <span class="relative h-5 w-5 shrink-0">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="absolute inset-0 h-5 w-5 opacity-100 group-open:opacity-0"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+        
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="absolute inset-0 h-5 w-5 opacity-0 group-open:opacity-100"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </span>
+              </summary>
+        
+              <p class="mt-4 leading-relaxed text-gray-700">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis molestias culpa
+                in, recusandae laboriosam neque aliquid libero nesciunt voluptate dicta quo officiis
+                explicabo consequuntur distinctio corporis earum similique!
+              </p>
+            </details>
+            <details class="group py-8 [&_summary::-webkit-details-marker]:hidden">
+              <summary class="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900">
+                <h2 class="text-lg font-medium">Lorem ipsum dolor sit amet consectetur adipisicing?</h2>
+        
+                <span class="relative h-5 w-5 shrink-0">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="absolute inset-0 h-5 w-5 opacity-100 group-open:opacity-0"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+        
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="absolute inset-0 h-5 w-5 opacity-0 group-open:opacity-100"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </span>
+              </summary>
+        
+              <p class="mt-4 leading-relaxed text-gray-700">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis molestias culpa
+                in, recusandae laboriosam neque aliquid libero nesciunt voluptate dicta quo officiis
+                explicabo consequuntur distinctio corporis earum similique!
+              </p>
+            </details>
+            <details class="group py-8 [&_summary::-webkit-details-marker]:hidden">
+              <summary class="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900">
+                <h2 class="text-lg font-medium">Lorem ipsum dolor sit amet consectetur adipisicing?</h2>
+        
+                <span class="relative h-5 w-5 shrink-0">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="absolute inset-0 h-5 w-5 opacity-100 group-open:opacity-0"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+        
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="absolute inset-0 h-5 w-5 opacity-0 group-open:opacity-100"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </span>
+              </summary>
+        
+              <p class="mt-4 leading-relaxed text-gray-700">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis molestias culpa
+                in, recusandae laboriosam neque aliquid libero nesciunt voluptate dicta quo officiis
+                explicabo consequuntur distinctio corporis earum similique!
+              </p>
+            </details>
           </div>
         </div>
-        <div class="collapse collapse-plus bg-base-200">
-          <input type="radio" name="my-accordion-3" />
-          <div class="collapse-title text-xl font-medium">
-            Click to open this one and close others
-          </div>
-          <div class="collapse-content">
-            <p>hello</p>
-          </div>
+
         </div>
-        <div class="collapse collapse-plus bg-base-200">
-          <input type="radio" name="my-accordion-3" />
-          <div class="collapse-title text-xl font-medium">
-            Click to open this one and close others
-          </div>
-          <div class="collapse-content">
-            <p>hello</p>
-          </div>
-        </div>
+
+        
       </div>
     </section>
 
@@ -249,64 +518,89 @@
 
     <section>
       <div>
-        <div class="">
-            <h1 class="text-5xl mb-4 font-semibold text-center">
+        <div class=" pt-10 pb-10">
+            <h1 class="text-5xl mb-4 font-semibold text-center pt-8">
                 Get In Touch
             </h1>
-            <p class="text-base mb-10 font-light text-center">
+            <p class="text-base mb-4 font-light text-center">
                 Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor.
                  Purus urna in sit nullam proin.
             </p>
           </div>
 
-        <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
-              <div class="lg:col-span-2 lg:py-12">
+        <div class="mx-auto max-w-screen-xl  px-8 py-10 sm:px-6 lg:px-4">
+            <div class="grid grid-cols-1 shadow-md gap-x-8 gap-y-8  lg:grid-cols-5 border-solid border-2 p-10">
+              <div class="lg:col-span-2 lg:py-16">
                 
         
-                <div class="mt-8">
+                <div class="flex flex-col  gap-8  ">
+                  <div class=" rounded-2xl bg-lime-100 py-10 px-8">
+                    <img src="./Images/3d-accept 1.svg" alt="">
+                    <h5>Phone Number : 
+                      </h5>
+                      <h4>(+62) 123-321-543</h4>
+                  </div>
+                  <div class="rounded-2xl bg-amber-50 py-10 px-8">
+                    <img src="./Images/direct 1.svg" alt="">
+                    <h5>Email : 
+                       
+                      </h5>
+                      <h4>hockeys@support.com</h4>
+                  </div>
+                  <div class="rounded-2xl bg-cyan-200 py-10 px-8">
+                    <img src="./Images/google-maps 1.svg" alt="">
+                    <h5>Location : 
+                       
+                      </h5>
+                      <h4>152/1 Mohakhali Wireless Gate</h4>
+                  </div>
                   
         
                   
                 </div>
               </div>
         
-              <div class="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
-                <form action="" class="space-y-4">
-                  <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                    <label class="sr-only" for="first-name">First Name</label>
-                    <input
-                      class="w-full rounded-lg border-gray-200 p-3 text-sm"
-                      placeholder="First Name"
-                      type="text"
-                      id="first-name"
-                    />
-                  </div>
-                  <div class="">
-                    <label class="sr-only" for="last-name">Last Name</label>
-                    <input
-                      class="w-full rounded-lg border-gray-200 p-3 text-sm"
-                      placeholder="Last-Name"
-                      type="text"
-                      id="last-name"
-                    />
-                  </div>
-        
+              <div class="flex justify-center items-center bg-white p-4  lg:col-span-3 lg:p-5 sm:col-span-2">
+                <form action="" class="space-y-2">
+                  
                   <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
                     <div>
-                      <label class="sr-only" for="email">Email</label>
+                      <label class="text-xl text-[#131318]" for="name">Your Name</label>
                       <input
-                        class="w-full rounded-lg border-gray-200 p-3 text-sm"
+                        class="w-full rounded-lg border-gray-200 bg-[#13131808] p-3 text-sm"
+                        placeholder="Enter Your Name"
+                        type="text"
+                        id="name"
+                      />
+                    </div>
+                    <div>
+                      <label class="text-xl text-[#131318]" for="email">Email</label>
+                      <input
+                        class="w-full rounded-lg border-gray-200 bg-[#13131808] p-3 text-sm"
                         placeholder="Email address"
                         type="email"
                         id="email"
                       />
                     </div>
         
+                    
+                  </div>
+                  
+                  <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
                     <div>
-                      <label class="sr-only" for="phone">Phone</label>
+                      <label class="text-xl text-[#131318]" for="subjects">Subjects</label>
                       <input
-                        class="w-full rounded-lg border-gray-200 p-3 text-sm"
+                        class="w-full rounded-lg border-gray-200 bg-[#13131808] p-3 text-sm"
+                        placeholder="Subjects"
+                        type="text"
+                        id="subjects"
+                      />
+                    </div>
+        
+                    <div>
+                      <label class="text-xl text-[#131318]" for="phone">Phone</label>
+                      <input
+                        class="w-full rounded-lg border-gray-200 bg-[#13131808] p-3 text-sm"
                         placeholder="Phone Number"
                         type="tel"
                         id="phone"
@@ -317,23 +611,19 @@
                   
         
                   <div>
-                    <label class="sr-only" for="message">Message</label>
+                    <label class="text-xl text-[#131318]" for="message">Message</label>
         
                     <textarea
-                      class="w-full rounded-lg border-gray-200 p-3 text-sm"
+                      class="w-full rounded-lg border-gray-200 bg-[#13131808] p-3 text-sm"
                       placeholder="Message"
-                      rows="8"
+                      rows="15"
                       id="message"
                     ></textarea>
                   </div>
         
                   <div class="mt-4">
-                    <button
-                      type="submit"
-                      class="inline-block w-full rounded-lg bg-black px-5 py-3 font-medium text-white sm:w-auto"
-                    >
-                      Send Enquiry
-                    </button>
+                    <button class="btn btn-block bg-red-600 text-white">Send Message</button>
+                    
                   </div>
                 </form>
               </div>
@@ -346,14 +636,14 @@
     <!-- Social Media  -->
     <section>
         <div class="">
-            <h1 class="text-5xl mb-4 font-semibold text-center">
+            <h1 class="text-4xl mb-2 font-semibold text-center">
                 Social Media
             </h1>
             
           </div>
       <!-- Social media icons container -->
 
-      <div class="mb-6 flex justify-center py-20">
+      <div class="mb-10 flex justify-center py-5">
         <a
           href="#!"
           type="button"
@@ -474,83 +764,86 @@
 
     <!-- footer section  -->
     <footer
-      class="flex flex-col items-center bg-neutral-900 text-center text-white"
+      class="flex flex-col items-center bg-neutral-900 text-center text-white "
     >
       <div class="container px-6 pt-6">
         <!-- Links section -->
-        <div class="grid md:grid-cols-2 lg:grid-cols-4">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 py-20">
           <div class="mb-6">
-            <h5 class="mb-2.5 font-bold uppercase">Links</h5>
+            <h5 class="mb-2.5 font-bold uppercase text-left">Get In Touch</h5>
+            <p class="text-left pb-4">Dit amet consectetur. Condimentum  adipiscing aliquam turpis placerat dolor.</p>
+
+
+            <ul class="mb-0 list-none text-left lowercase">
+              <li class="">
+                <a href="#!" class=" text-red lowercase"><i class="fa-regular fa-envelope"> hockeys@support.com</i></a>
+              </li>
+              <li>
+                <a href="#!" class="text-red"><i class="fa-solid fa-phone"> (+62) 123-321-543</i></a>
+              </li>
+              
+            </ul>
+          </div>
+
+          <div class="mb-6">
+            <h5 class="mb-2.5 font-bold uppercase ">Company</h5>
 
             <ul class="mb-0 list-none">
               <li>
-                <a href="#!" class="text-white">Link 1</a>
+                <a href="#!" class="text-white">About Us</a>
               </li>
               <li>
-                <a href="#!" class="text-white">Link 2</a>
+                <a href="#!" class="text-white">Leadership</a>
               </li>
               <li>
-                <a href="#!" class="text-white">Link 3</a>
+                <a href="#!" class="text-white">Careers</a>
               </li>
               <li>
-                <a href="#!" class="text-white">Link 4</a>
+                <a href="#!" class="text-white">News & Articles</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Legal Notice</a>
               </li>
             </ul>
           </div>
 
           <div class="mb-6">
-            <h5 class="mb-2.5 font-bold uppercase">Links</h5>
+            <h5 class="mb-2.5 font-bold uppercase">Support</h5>
 
             <ul class="mb-0 list-none">
               <li>
-                <a href="#!" class="text-white">Link 1</a>
+                <a href="#!" class="text-white">Help Center</a>
               </li>
               <li>
-                <a href="#!" class="text-white">Link 2</a>
+                <a href="#!" class="text-white">FAQ</a>
               </li>
               <li>
-                <a href="#!" class="text-white">Link 3</a>
+                <a href="#!" class="text-white">Ticket Support</a>
               </li>
               <li>
-                <a href="#!" class="text-white">Link 4</a>
+                <a href="#!" class="text-white">Contact Us</a>
               </li>
             </ul>
           </div>
 
           <div class="mb-6">
-            <h5 class="mb-2.5 font-bold uppercase">Links</h5>
+            <h5 class="mb-2.5 font-bold uppercase">Services</h5>
 
-            <ul class="mb-0 list-none">
+            <ul class="mb list-none">
               <li>
-                <a href="#!" class="text-white">Link 1</a>
+                <a href="#!" class="text-white">Academy </a>
               </li>
               <li>
-                <a href="#!" class="text-white">Link 2</a>
+                <a href="#!" class="text-white">Group Lesson</a>
               </li>
               <li>
-                <a href="#!" class="text-white">Link 3</a>
+                <a href="#!" class="text-white">Private Lesson</a>
               </li>
               <li>
-                <a href="#!" class="text-white">Link 4</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="mb-6">
-            <h5 class="mb-2.5 font-bold uppercase">Links</h5>
-
-            <ul class="mb-0 list-none">
-              <li>
-                <a href="#!" class="text-white">Link 1</a>
+                <a href="#!" class="text-white">Hockeys for kids</a>
               </li>
               <li>
-                <a href="#!" class="text-white">Link 2</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Link 3</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Link 4</a>
+                <a href="#!" class="text-white">Hockeys for Adult</a>
               </li>
             </ul>
           </div>
