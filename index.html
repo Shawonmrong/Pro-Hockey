@@ -1,89 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Assignment 3</title>
-    <!-- tailwinds and deisyUI links  -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- <link href="./output.css" rel="stylesheet"> -->
-    <link rel="stylesheet" href="/tailwind.config.js" />
-    <!-- google font  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <!-- font awesome cdn link  -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- font link styles  -->
-    <style>
-      font.manrope {
-        font-family: "Manrope", sans-serif;
-      }
-    </style>
-    <!-- tailwind styles  -->
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              clifford: "#da373d",
-            },
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assignment 3</title>
+  <!-- tailwinds and deisyUI links  -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- <link href="./output.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="/tailwind.config.js" />
+  <!-- google font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- font link styles  -->
+  <style>
+    font.manrope {
+      font-family: "Manrope", sans-serif;
+    }
+  </style>
+  <!-- tailwind styles  -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: "#da373d",
           },
         },
-      };
-    </script>
-  </head>
-  <body class="font.manrope">
-    <header>
-      <nav class="container mx-auto lg:px-24 px-8 my-8">
-        <div class="navbar bg-base-100 h-20">
-          <div class="navbar-start">
-            <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
-                </svg>
-              </div>
-              <ul
-                tabindex="0"
-                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-              >
-                <li><a>Home</a></li>
-                <li><a>About</a></li>
-                <li><a>Pages</a></li>
-                <li><a>Blog</a></li>
-                <li><a>Contact</a></li>
-              </ul>
+      },
+    };
+  </script>
+</head>
+
+<body class="font.manrope">
+  <header>
+    <nav class="container mx-auto lg:px-24 px-8 my-8">
+      <div class="navbar bg-base-100 h-20">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
             </div>
-            <a class="btn btn-ghost text-xl">Pro-Hockey</a>
-          </div>
-          <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
               <li><a>Home</a></li>
               <li><a>About</a></li>
               <li><a>Pages</a></li>
@@ -91,347 +59,373 @@
               <li><a>Contact</a></li>
             </ul>
           </div>
-          <div class="navbar-end">
-            <span
-              class="input-group-text flex items-center whitespace-nowrap rounded px-3 py-1.5 text-center text-base font-normal text-neutral-700 dark:text-neutral-200"
-              id="basic-addon2"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                class="h-5 w-5"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </span>
-            <a class="btn btn-active bg-[#FF4240] text-white">Get Ticket</a>
+          <a class="text-4xl text-[#131318]">Pro-Hoc<span class="text-4xl text-[#FF4240]">Key</span></a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal text-lg px-1">
+            <li><a class="text-[#FF4240]">Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Pages</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <span
+            class="input-group-text flex items-center whitespace-nowrap rounded px-3 py-1.5 text-center text-base font-normal text-neutral-700 dark:text-neutral-200"
+            id="basic-addon2">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
+              <path fill-rule="evenodd"
+                d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
+                clip-rule="evenodd" />
+            </svg>
+          </span>
+          <a class="btn btn-active bg-[#FF4240] text-white">Get Ticket</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- banner Section  -->
+  <section>
+    <div class="container mx-auto lg:px-24 px-8">
+      <div class="carousel w-full bg-[]">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="./Images/hoc-1.jpg" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
           </div>
         </div>
-      </nav>
-    </header>
-
-    <!-- banner Section  -->
-    <section>
-      <div class="container mx-auto lg:px-24 px-8">
-        <div class="carousel w-full bg-[]">
-          <div id="slide1" class="carousel-item relative w-full">
-            <img src="./Images/hoc-1.jpg" class="w-full" />
-            <div
-              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
-            >
-              <a href="#slide4" class="btn btn-circle">❮</a>
-              <a href="#slide2" class="btn btn-circle">❯</a>
-            </div>
-          </div>
-          <div id="slide2" class="carousel-item relative w-full">
-            <img src="./Images/hok-2.jpg" class="w-full" />
-            <div
-              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
-            >
-              <a href="#slide1" class="btn btn-circle">❮</a>
-              <a href="#slide3" class="btn btn-circle">❯</a>
-            </div>
-          </div>
-          <div id="slide3" class="carousel-item relative w-full">
-            <img src="./Images/hok-3.jpg" class="w-full" />
-            <div
-              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
-            >
-              <a href="#slide2" class="btn btn-circle">❮</a>
-              <a href="#slide4" class="btn btn-circle">❯</a>
-            </div>
-          </div>
-          <div id="slide4" class="carousel-item relative w-full">
-            <img src="./Images/hok-4.jpg" class="w-full" />
-            <div
-              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
-            >
-              <a href="#slide3" class="btn btn-circle">❮</a>
-              <a href="#slide1" class="btn btn-circle">❯</a>
-            </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="./Images/hok-2.jpg" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
           </div>
         </div>
-
-        <div class="container absolute -mt-48 -ml-60">
-          <div class="flex flex-row relative justify-end text-left">
-            <div class="card w-[400] h[100] bg-black">
-              <div class="px-10 py-6">
-                <h2 class="text-white text-2xl">Meet all the heroes from the field</h2>
-                <p class="text-white text-base">Dit amet consectetur.
-                  Condimentum dignissim adipiscing aliquam<br> turpis placerat dolor. Purus urna in sit nullam proin.</p>
-                
-              </div>
-            </div>
-            
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="./Images/hok-3.jpg" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
           </div>
-  
+        </div>
+        <div id="slide4" class="carousel-item relative w-full">
+          <img src="./Images/hok-4.jpg" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container absolute -mt-48 -ml-60">
+        <div class="flex flex-row relative justify-end text-left">
+          <div class="card w-[400] h[100] bg-black">
+            <div class="px-10 py-6">
+              <h2 class="text-white text-2xl">Meet all the heroes from the field</h2>
+              <p class="text-white text-base">Dit amet consectetur.
+                Condimentum dignissim adipiscing aliquam<br> turpis placerat dolor. Purus urna in sit nullam proin.</p>
+
+            </div>
+          </div>
+
         </div>
 
       </div>
-    </section>
-    
-    <!-- professional section  -->
-    <section>
-      <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
-        <h3 class="text-5xl mb-4 font-semibold text-center">
-          Professional Hockeys Club
-        </h3>
+
+    </div>
+  </section>
+
+  <!-- professional section  -->
+  <section>
+    <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+      <h3 class="text-5xl mb-4 font-semibold text-center">
+        Professional Hockeys Club
+      </h3>
+      <p class="mx-auto mt-4 max-w-md text-base mb-10 font-light text-center">
+        Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+        placerat dolor. Purus urna in sit nullam proin.
+      </p>
+      <div class="grid grid-cols-1 gap-4 lg:grid-cols-4 lg:gap-4">
+        <div class="h-[120] rounded-lg  p-10">
+          <div class="text-center">
+            <div class="radial-progress text-[#FF4240]" style="--value:87;" role="progressbar">87%</div>
+            <h1 class="text-center text-[#131318] text-xl font-semibold p-4">Prayer Facility</h1>
+            <p class="text-center text-[#13131899] text-base">Amet consectetur.
+              Condimentum dignissim adipiscing .</p>
+          </div>
+        </div>
+
+        <div class="h-[120] rounded-lg  p-10">
+          <div class="text-center">
+            <div class="radial-progress text-[#49D293]" style="--value:95;" role="progressbar">95%</div>
+            <h1 class="text-center text-[#131318] text-xl font-semibold p-4">Prayer Facility</h1>
+            <p class="text-center text-[#13131899] text-base">Amet consectetur.
+              Condimentum dignissim adipiscing .</p>
+          </div>
+
+        </div>
+
+        <div class="h-[120] rounded-lg  p-10">
+          <div class="text-center">
+            <div class="radial-progress text-[#F99808]" style="--value:90;" role="progressbar">90%</div>
+            <h1 class="text-center text-[#131318] text-xl font-semibold p-4">Prayer Facility</h1>
+            <p class="text-center text-[#13131899] text-base">Amet consectetur.
+              Condimentum dignissim adipiscing .</p>
+          </div>
+        </div>
+
+        <div class="h-[120] rounded-lg  p-10">
+          <div class="text-center">
+            <div class="radial-progress text-[#4C8DF1]" style="--value:80;" role="progressbar">80%</div>
+            <h1 class="text-center text-[#131318] text-xl font-semibold p-4">Prayer Facility</h1>
+            <p class="text-center text-[#13131899] text-base">Amet consectetur.
+              Condimentum dignissim adipiscing .</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Program Sections  -->
+
+  <section>
+    <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+      <div class="container mx-auto pt-10">
+        <h1 class="text-5xl mb-4 font-semibold text-center">
+          Program Sections
+        </h1>
         <p class="mx-auto mt-4 max-w-md text-base mb-10 font-light text-center">
-          Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
-          placerat dolor. Purus urna in sit nullam proin.
+          Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+          turpis placerat dolor. Purus urna in sit nullam proin.
         </p>
-        <div class="grid grid-cols-1 gap-4 lg:grid-cols-4 lg:gap-4">
-          <div class="h-[120] rounded-lg  p-10">
-            <div class="text-center">
-              <div class="radial-progress text-[#FF4240]" style="--value:87;" role="progressbar">87%</div>
-              <h1 class="text-center text-[#131318] text-xl font-semibold p-4">Prayer Facility</h1>
-              <p class="text-center text-[#13131899] text-base">Amet consectetur. 
-                Condimentum dignissim adipiscing .</p>
-              </div>
-          </div>
-
-          <div class="h-[120] rounded-lg  p-10">
-            <div class="text-center">
-              <div class="radial-progress text-[#49D293]" style="--value:95;" role="progressbar">95%</div>
-              <h1 class="text-center text-[#131318] text-xl font-semibold p-4">Prayer Facility</h1>
-              <p class="text-center text-[#13131899] text-base">Amet consectetur. 
-                Condimentum dignissim adipiscing .</p>
-            </div>
-
-          </div>
-
-          <div class="h-[120] rounded-lg  p-10">
-            <div class="text-center">
-              <div class="radial-progress text-[#F99808]" style="--value:90;" role="progressbar">90%</div>
-              <h1 class="text-center text-[#131318] text-xl font-semibold p-4">Prayer Facility</h1>
-              <p class="text-center text-[#13131899] text-base">Amet consectetur. 
-                Condimentum dignissim adipiscing .</p>
-            </div>
-          </div>
-
-          <div class="h-[120] rounded-lg  p-10">
-            <div class="text-center">
-              <div class="radial-progress text-[#4C8DF1]" style="--value:80;" role="progressbar">80%</div>
-              <h1 class="text-center text-[#131318] text-xl font-semibold p-4">Prayer Facility</h1>
-              <p class="text-center text-[#13131899] text-base">Amet consectetur. 
-                Condimentum dignissim adipiscing .</p>
-            </div>
-          </div>
-        </div>
       </div>
-    </section>
-    <!-- Program Sections  -->
-
-    <section>
-      <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
-        <div class="container mx-auto pt-10">
-          <h1 class="text-5xl mb-4 font-semibold text-center">
-            Program Sections
-          </h1>
-          <p class="mx-auto mt-4 max-w-md text-base mb-10 font-light text-center">
-            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
-            turpis placerat dolor. Purus urna in sit nullam proin.
-          </p>
-        </div>
-        <div class="container mx-auto grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8 pb-10">
-          <div class="h-[40vh] rounded-lg bg-gray-200 bg-cover bg-center" style="background-image: url(../Images/2.png)">
+      <div class="container mx-auto grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8 pb-10">
+        <div class="h-[40vh] rounded-lg bg-gray-200 bg-cover bg-center" style="background-image: url(../Images/2.png)">
           <div class="text-left text-white px-8 py-24">
             <h1 class="text-4xl">Junior Program</h1>
-          <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
-            enim sagittis turpis in magna.<br> Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+              enim sagittis turpis in magna.<br> Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et
+              in.</p>
             <button class="btn bg-[#FF4240] text-white">Register Now!</button>
           </div>
-            
-          </div>
-          <div class="h-[40vh] rounded-lg bg-gray-200 bg-cover bg-center" style="background-image: url(../Images/3.png)">
-            <div class="text-left text-white px-8 py-24">
-              <h1 class="text-4xl">Junior Program</h1>
-            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
-              enim sagittis turpis in magna. <br>Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
-              <button class="btn bg-[#FF4240] text-white">Register Now!</button>
-            </div>
+
+        </div>
+        <div class="h-[40vh] rounded-lg bg-gray-200 bg-cover bg-center" style="background-image: url(../Images/3.png)">
+          <div class="text-left text-white px-8 py-24">
+            <h1 class="text-4xl">Junior Program</h1>
+            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+              enim sagittis turpis in magna. <br>Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et
+              in.</p>
+            <button class="btn bg-[#FF4240] text-white">Register Now!</button>
           </div>
         </div>
-        <div class="container mx-auto grid grid-cols-1 gap-4 lg:grid-cols-1 lg:gap-8">
-          <div class="h-[500px] rounded-lg bg-gray-200 bg-cover bg-center" style="background-image: url(../Images/4.png)">
-            <div class="text-left text-white px-8 py-24">
-              <h1 class="text-4xl">Junior Program</h1>
+      </div>
+      <div class="container mx-auto grid grid-cols-1 gap-4 lg:grid-cols-1 lg:gap-8">
+        <div class="h-[500px] rounded-lg bg-gray-200 bg-cover bg-center" style="background-image: url(../Images/4.png)">
+          <div class="text-left text-white px-8 py-24">
+            <h1 class="text-4xl">Junior Program</h1>
             <p class="">Dolor sit amet consectetur. Ut urna diam quis sagittis.
-               Elit elit 
+              Elit elit
               enim sagittis turpis in magna.<br>
-               Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
-              <button class="btn bg-[#FF4240] text-white">Register Now!</button>
+              Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+            <button class="btn bg-[#FF4240] text-white">Register Now!</button>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+  <!-- Our New Products  -->
+
+  <section>
+    <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+      <header class="text-center">
+        <h2 class="text-5xl mb-4 font-semibold text-center">Product Collection</h2>
+
+        <p class="mx-auto mt-4 pb-10 max-w-md text-gray-500">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque praesentium cumque iure
+          dicta incidunt est ipsam, officia dolor fugit natus?
+        </p>
+      </header>
+
+      <div class="grid grid-cols-1 gap-4 pb-10 lg:grid-cols-2 lg:gap-8">
+        <div
+          class=" relative [240px] rounded-lg bg-gray-200 bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+
+          <a href="#"
+            class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+            <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+              src="./Images/5.png" alt="">
+            <div class="flex flex-col justify-between p-4 leading-normal">
+              <ul class="inline list-none ">
+                <li class="inline-block mr-2"><i class="fa-solid fa-star"></i></li>
+                <li class="inline-block mr-2"><i class="fa-solid fa-eye"></i></li>
+                <li class="inline-block mr-2"><i class="fa-regular fa-heart"></i></li>
+              </ul>
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology
+                acquisitions 2021</h5>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology
+                acquisitions of 2021 so far, in reverse chronological order.</p>
+              <ul class="inline list-none ">
+                <li class="inline-block mr-2">$220</li>
+                <li class="inline-block mr-2"><i class="fa-solid fa-truck"></i></i> Delivery Fee :Free</li>
+              </ul>
             </div>
-          </div>
-        </div>
+          </a>
 
-        
+        </div>
+        <div
+          class="relative [240px] rounded-lg bg-gray-200 bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+
+          <a href="#"
+            class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+            <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+              src="./Images/6.png" alt="">
+            <div class="flex flex-col justify-between p-4 leading-normal">
+              <ul class="inline list-none ">
+                <li class="inline-block mr-2"><i class="fa-solid fa-star"></i></li>
+                <li class="inline-block mr-2"><i class="fa-solid fa-eye"></i></li>
+                <li class="inline-block mr-2"><i class="fa-regular fa-heart"></i></li>
+              </ul>
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology
+                acquisitions 2021</h5>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology
+                acquisitions of 2021 so far, in reverse chronological order.</p>
+              <ul class="inline list-none ">
+                <li class="inline-block mr-2">$220</li>
+                <li class="inline-block mr-2"><i class="fa-solid fa-truck"></i></i> Delivery Fee :Free</li>
+              </ul>
+            </div>
+          </a>
+        </div>
       </div>
-    </section>
-    <!-- Our New Products  -->
 
-    <section>
-      <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
-        <header class="text-center">
-          <h2 class="text-5xl mb-4 font-semibold text-center">Product Collection</h2>
-    
-          <p class="mx-auto mt-4 pb-10 max-w-md text-gray-500">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque praesentium cumque iure
-            dicta incidunt est ipsam, officia dolor fugit natus?
-          </p>
-        </header>
-        
-        <div class="grid grid-cols-1 gap-4 pb-10 lg:grid-cols-2 lg:gap-8">
-          <div class=" relative [240px] rounded-lg bg-gray-200 bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-            
-<a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-  <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="./Images/5.png" alt="">
-  <div class="flex flex-col justify-between p-4 leading-normal">
-    <ul class="inline list-none ">
-      <li class="inline-block mr-2"><i class="fa-solid fa-star"></i></li>
-      <li class="inline-block mr-2"><i class="fa-solid fa-eye"></i></li>
-      <li class="inline-block mr-2"><i class="fa-regular fa-heart"></i></li>
-    </ul>
-      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-      <ul class="inline list-none ">
-        <li class="inline-block mr-2">$220</li>
-        <li class="inline-block mr-2"><i class="fa-solid fa-truck"></i></i> Delivery Fee :Free</li>
-      </ul>
-  </div>
-</a>
+      <div class="grid grid-cols-1 gap-4 pb-10 lg:grid-cols-2 lg:gap-8">
+        <div
+          class=" relative [240px] rounded-lg bg-gray-200 bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
 
-          </div>
-          <div class="relative [240px] rounded-lg bg-gray-200 bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+          <a href="#"
+            class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+            <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+              src="./Images/7.png" alt="">
+            <div class="flex flex-col justify-between p-4 leading-normal">
+              <ul class="inline list-none ">
+                <li class="inline-block mr-2"><i class="fa-solid fa-star"></i></li>
+                <li class="inline-block mr-2"><i class="fa-solid fa-eye"></i></li>
+                <li class="inline-block mr-2"><i class="fa-regular fa-heart"></i></li>
+              </ul>
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology
+                acquisitions 2021</h5>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology
+                acquisitions of 2021 so far, in reverse chronological order.</p>
+              <ul class="inline list-none ">
+                <li class="inline-block mr-2">$220</li>
+                <li class="inline-block mr-2"><i class="fa-solid fa-truck"></i></i> Delivery Fee :Free</li>
+              </ul>
+            </div>
+          </a>
 
-            <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-              <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="./Images/6.png" alt="">
-              <div class="flex flex-col justify-between p-4 leading-normal">
-                <ul class="inline list-none ">
-                  <li class="inline-block mr-2"><i class="fa-solid fa-star"></i></li>
-                  <li class="inline-block mr-2"><i class="fa-solid fa-eye"></i></li>
-                  <li class="inline-block mr-2"><i class="fa-regular fa-heart"></i></li>
-                </ul>
-                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-                  <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                  <ul class="inline list-none ">
-                    <li class="inline-block mr-2">$220</li>
-                    <li class="inline-block mr-2"><i class="fa-solid fa-truck"></i></i> Delivery Fee :Free</li>
-                  </ul>
-              </div>
-            </a>
-          </div>
         </div>
+        <div
+          class="relative [240px] rounded-lg bg-gray-200 bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
 
-        <div class="grid grid-cols-1 gap-4 pb-10 lg:grid-cols-2 lg:gap-8">
-          <div class=" relative [240px] rounded-lg bg-gray-200 bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-            
-<a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-  <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="./Images/7.png" alt="">
-  <div class="flex flex-col justify-between p-4 leading-normal">
-    <ul class="inline list-none ">
-      <li class="inline-block mr-2"><i class="fa-solid fa-star"></i></li>
-      <li class="inline-block mr-2"><i class="fa-solid fa-eye"></i></li>
-      <li class="inline-block mr-2"><i class="fa-regular fa-heart"></i></li>
-    </ul>
-      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-      <ul class="inline list-none ">
-        <li class="inline-block mr-2">$220</li>
-        <li class="inline-block mr-2"><i class="fa-solid fa-truck"></i></i> Delivery Fee :Free</li>
-      </ul>
-  </div>
-</a>
-
-          </div>
-          <div class="relative [240px] rounded-lg bg-gray-200 bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-
-            <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-              <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="./Images/8.png" alt="">
-              <div class="flex flex-col justify-between p-4 leading-normal">
-                <ul class="inline list-none ">
-                  <li class="inline-block mr-2"><i class="fa-solid fa-star"></i></li>
-                  <li class="inline-block mr-2"><i class="fa-solid fa-eye"></i></li>
-                  <li class="inline-block mr-2"><i class="fa-regular fa-heart"></i></li>
-                </ul>
-                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-                  <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                  <ul class="inline list-none ">
-                    <li class="inline-block mr-2">$220</li>
-                    <li class="inline-block mr-2"><i class="fa-solid fa-truck"></i></i> Delivery Fee :Free</li>
-                  </ul>
-              </div>
-            </a>
-          </div>
+          <a href="#"
+            class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+            <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+              src="./Images/8.png" alt="">
+            <div class="flex flex-col justify-between p-4 leading-normal">
+              <ul class="inline list-none ">
+                <li class="inline-block mr-2"><i class="fa-solid fa-star"></i></li>
+                <li class="inline-block mr-2"><i class="fa-solid fa-eye"></i></li>
+                <li class="inline-block mr-2"><i class="fa-regular fa-heart"></i></li>
+              </ul>
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology
+                acquisitions 2021</h5>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology
+                acquisitions of 2021 so far, in reverse chronological order.</p>
+              <ul class="inline list-none ">
+                <li class="inline-block mr-2">$220</li>
+                <li class="inline-block mr-2"><i class="fa-solid fa-truck"></i></i> Delivery Fee :Free</li>
+              </ul>
+            </div>
+          </a>
         </div>
-
-        <div class="grid grid-cols-1 gap-4 pb-10 lg:grid-cols-2 lg:gap-8">
-          <div class=" relative [240px] rounded-lg bg-gray-200 bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-            
-<a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-  <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="./Images/9.png" alt="">
-  <div class="flex flex-col justify-between p-4 leading-normal">
-    <ul class="inline list-none ">
-      <li class="inline-block mr-2"><i class="fa-solid fa-star"></i></li>
-      <li class="inline-block mr-2"><i class="fa-solid fa-eye"></i></li>
-      <li class="inline-block mr-2"><i class="fa-regular fa-heart"></i></li>
-    </ul>
-      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-      <ul class="inline list-none ">
-        <li class="inline-block mr-2">$220</li>
-        <li class="inline-block mr-2"><i class="fa-solid fa-truck"></i></i> Delivery Fee :Free</li>
-      </ul>
-  </div>
-</a>
-
-          </div>
-          <div class="relative [240px] rounded-lg bg-gray-200 bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-
-            <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-              <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="./Images/10.png" alt="">
-              <div class="flex flex-col justify-between p-4 leading-normal">
-                <ul class="inline list-none ">
-                  <li class="inline-block mr-2"><i class="fa-solid fa-star"></i></li>
-                  <li class="inline-block mr-2"><i class="fa-solid fa-eye"></i></li>
-                  <li class="inline-block mr-2"><i class="fa-regular fa-heart"></i></li>
-                </ul>
-                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-                  <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                  <ul class="inline list-none ">
-                    <li class="inline-block mr-2">$220</li>
-                    <li class="inline-block mr-2"><i class="fa-solid fa-truck"></i></i> Delivery Fee :Free</li>
-                  </ul>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        
-        
       </div>
-    </section>
 
-    <!-- Clients Question  -->
+      <div class="grid grid-cols-1 gap-4 pb-10 lg:grid-cols-2 lg:gap-8">
+        <div
+          class=" relative [240px] rounded-lg bg-gray-200 bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
 
-    <section>
-      <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
-        <div class="">
-          <h1 class="text-5xl mb-4 font-semibold text-center">
-            Clients Question
-          </h1>
-          <p class=" mx-auto mt-4 max-w-md text-base mb-10 font-light text-center">
-            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
-            turpis placerat dolor. Purus urna in sit nullam proin.
-          </p>
+          <a href="#"
+            class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+            <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+              src="./Images/9.png" alt="">
+            <div class="flex flex-col justify-between p-4 leading-normal">
+              <ul class="inline list-none ">
+                <li class="inline-block mr-2"><i class="fa-solid fa-star"></i></li>
+                <li class="inline-block mr-2"><i class="fa-solid fa-eye"></i></li>
+                <li class="inline-block mr-2"><i class="fa-regular fa-heart"></i></li>
+              </ul>
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology
+                acquisitions 2021</h5>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology
+                acquisitions of 2021 so far, in reverse chronological order.</p>
+              <ul class="inline list-none ">
+                <li class="inline-block mr-2">$220</li>
+                <li class="inline-block mr-2"><i class="fa-solid fa-truck"></i></i> Delivery Fee :Free</li>
+              </ul>
+            </div>
+          </a>
+
         </div>
-        <div class="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-8">
-          <!-- faq logo item  -->
+        <div
+          class="relative [240px] rounded-lg bg-gray-200 bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+
+          <a href="#"
+            class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+            <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+              src="./Images/10.png" alt="">
+            <div class="flex flex-col justify-between p-4 leading-normal">
+              <ul class="inline list-none ">
+                <li class="inline-block mr-2"><i class="fa-solid fa-star"></i></li>
+                <li class="inline-block mr-2"><i class="fa-solid fa-eye"></i></li>
+                <li class="inline-block mr-2"><i class="fa-regular fa-heart"></i></li>
+              </ul>
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology
+                acquisitions 2021</h5>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology
+                acquisitions of 2021 so far, in reverse chronological order.</p>
+              <ul class="inline list-none ">
+                <li class="inline-block mr-2">$220</li>
+                <li class="inline-block mr-2"><i class="fa-solid fa-truck"></i></i> Delivery Fee :Free</li>
+              </ul>
+            </div>
+          </a>
+        </div>
+      </div>
+
+
+
+    </div>
+  </section>
+
+  <!-- Clients Question  -->
+
+  <section>
+    <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+      <div class="">
+        <h1 class="text-5xl mb-4 font-semibold text-center">
+          Clients Question
+        </h1>
+        <p class=" mx-auto mt-4 max-w-md text-base mb-10 font-light text-center">
+          You can also browse the topics below to find what you are looking for.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-8">
+        <!-- faq logo item  -->
 
         <div class="flex justify-center items-center bg-gray-200">
           <img src="./Images/11.png" alt="">
@@ -443,574 +437,412 @@
           <div class="-my-8 divide-y divide-gray-100">
             <details class="group py-8 [&_summary::-webkit-details-marker]:hidden" open>
               <summary class="flex cursor-pointer items-center justify-between text-gray-900">
-                <h2 class="text-lg font-medium">Lorem ipsum dolor sit amet consectetur adipisicing?</h2>
-        
+                <h2 class="text-lg font-medium">Are refreshments provided?</h2>
+
                 <span class="relative h-5 w-5 shrink-0">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="absolute inset-0 h-5 w-5 opacity-100 group-open:opacity-0"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                    class="absolute inset-0 h-5 w-5 opacity-100 group-open:opacity-0" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-        
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="absolute inset-0 h-5 w-5 opacity-0 group-open:opacity-100"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
+
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                    class="absolute inset-0 h-5 w-5 opacity-0 group-open:opacity-100" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </span>
               </summary>
-        
+
               <p class="mt-4 leading-relaxed text-gray-700">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis molestias culpa
-                in, recusandae laboriosam neque aliquid libero nesciunt voluptate dicta quo officiis
-                explicabo consequuntur distinctio corporis earum similique!
+                Yes, lunch and refreshments are provided at our events.
               </p>
             </details>
-        
+
             <details class="group py-8 [&_summary::-webkit-details-marker]:hidden">
               <summary class="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900">
-                <h2 class="text-lg font-medium">Lorem ipsum dolor sit amet consectetur adipisicing?</h2>
-        
+                <h2 class="text-lg font-medium">Do I need to be a hockey player to become a Hockey Maker?</h2>
+
                 <span class="relative h-5 w-5 shrink-0">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="absolute inset-0 h-5 w-5 opacity-100 group-open:opacity-0"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                    class="absolute inset-0 h-5 w-5 opacity-100 group-open:opacity-0" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-        
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="absolute inset-0 h-5 w-5 opacity-0 group-open:opacity-100"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
+
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                    class="absolute inset-0 h-5 w-5 opacity-0 group-open:opacity-100" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </span>
               </summary>
-        
+
               <p class="mt-4 leading-relaxed text-gray-700">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis molestias culpa
-                in, recusandae laboriosam neque aliquid libero nesciunt voluptate dicta quo officiis
-                explicabo consequuntur distinctio corporis earum similique!
+                No - great volunteers can come from any background. All we ask of Hockey Makers is a bucket load of
+                enthusiasm, a positive can-do attitude as well as a willingness to work as team and show initiative.
+                There are certain roles within the team which require a certain level of experience but we definitely
+                have roles for everyone!
               </p>
             </details>
-        
+
             <details class="group py-8 [&_summary::-webkit-details-marker]:hidden">
               <summary class="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900">
-                <h2 class="text-lg font-medium">Lorem ipsum dolor sit amet consectetur adipisicing?</h2>
-        
+                <h2 class="text-lg font-medium">Can I share volunteering opportunities at my club with Hockey Makers?
+                </h2>
+
                 <span class="relative h-5 w-5 shrink-0">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="absolute inset-0 h-5 w-5 opacity-100 group-open:opacity-0"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                    class="absolute inset-0 h-5 w-5 opacity-100 group-open:opacity-0" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-        
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="absolute inset-0 h-5 w-5 opacity-0 group-open:opacity-100"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
+
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                    class="absolute inset-0 h-5 w-5 opacity-0 group-open:opacity-100" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </span>
               </summary>
-        
+
               <p class="mt-4 leading-relaxed text-gray-700">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis molestias culpa
-                in, recusandae laboriosam neque aliquid libero nesciunt voluptate dicta quo officiis
-                explicabo consequuntur distinctio corporis earum similique!
+                Absolutely, we would love to share your opportunities with the Hockey Maker database. Click here and
+                head over to fill in the form details and you will become a provider on our system. You can then upload
+                any opportunities.
+                If someone from your club/association/organisation has created a provider account before, please liaise
+                with them and input the opportunity on this existing provider account.
               </p>
             </details>
             <details class="group py-8 [&_summary::-webkit-details-marker]:hidden">
               <summary class="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900">
-                <h2 class="text-lg font-medium">Lorem ipsum dolor sit amet consectetur adipisicing?</h2>
-        
+                <h2 class="text-lg font-medium">Are accessible roles available?</h2>
+
                 <span class="relative h-5 w-5 shrink-0">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="absolute inset-0 h-5 w-5 opacity-100 group-open:opacity-0"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                    class="absolute inset-0 h-5 w-5 opacity-100 group-open:opacity-0" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-        
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="absolute inset-0 h-5 w-5 opacity-0 group-open:opacity-100"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
+
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                    class="absolute inset-0 h-5 w-5 opacity-0 group-open:opacity-100" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </span>
               </summary>
-        
+
               <p class="mt-4 leading-relaxed text-gray-700">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis molestias culpa
-                in, recusandae laboriosam neque aliquid libero nesciunt voluptate dicta quo officiis
-                explicabo consequuntur distinctio corporis earum similique!
+                Yes, we have a wide range of roles available and a bit of something for everyone! If you are unsure
+                which would be the best role for you, please email: pro-hockey@info.com and we can help you
+                find the perfect role. We are also very happy to tailor different roles if needed.
               </p>
             </details>
             <details class="group py-8 [&_summary::-webkit-details-marker]:hidden">
               <summary class="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900">
-                <h2 class="text-lg font-medium">Lorem ipsum dolor sit amet consectetur adipisicing?</h2>
-        
+                <h2 class="text-lg font-medium">Do I get a choice about what role I do?</h2>
+
                 <span class="relative h-5 w-5 shrink-0">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="absolute inset-0 h-5 w-5 opacity-100 group-open:opacity-0"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                    class="absolute inset-0 h-5 w-5 opacity-100 group-open:opacity-0" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-        
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="absolute inset-0 h-5 w-5 opacity-0 group-open:opacity-100"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
+
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                    class="absolute inset-0 h-5 w-5 opacity-0 group-open:opacity-100" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </span>
               </summary>
-        
+
               <p class="mt-4 leading-relaxed text-gray-700">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis molestias culpa
-                in, recusandae laboriosam neque aliquid libero nesciunt voluptate dicta quo officiis
-                explicabo consequuntur distinctio corporis earum similique!
+                Across our smaller events, everyone will get involved with a bit of everything so there aren’t assigned
+                roles prior to the event. For larger events (e.g. International Fixtures, The Super 6s) you do have a
+                choice in which roles you would like to get involved in. Some roles do require a certain level of
+                experience but we think there is a bit of something for everyone!
               </p>
             </details>
           </div>
         </div>
 
-        </div>
-
-        
       </div>
-    </section>
 
-    <!-- Get In Touch  -->
 
-    <section>
-      <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
-        <div class=" pt-10 ">
-            <h1 class="text-5xl mb-4 font-semibold text-center pt-8">
-                Get In Touch
-            </h1>
-            <p class="mx-auto mt-4 max-w-md text-base mb-4 font-light text-center">
-                Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor.
-                 Purus urna in sit nullam proin.
-            </p>
+    </div>
+  </section>
+
+  <!-- Get In Touch  -->
+
+  <section>
+    <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+      <div class=" pt-10 ">
+        <h1 class="text-5xl mb-4 font-semibold text-center pt-8">
+          Get In Touch
+        </h1>
+        <p class="mx-auto mt-4 max-w-md text-base mb-4 font-light text-center">
+          Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor.
+          Purus urna in sit nullam proin.
+        </p>
+      </div>
+
+      <div class="mx-auto max-w-screen-xl  px-8 py-10 sm:px-2 lg:px-4">
+        <div class="grid grid-cols-1 shadow-md gap-x-8 gap-y-8  lg:grid-cols-5 border-solid border-2 p-10">
+          <div class="lg:col-span-2 lg:py-4">
+
+
+            <div class="flex flex-col  gap-8  ">
+              <div class=" rounded-2xl bg-lime-100 py-10 px-8">
+                <img src="./Images/3d-accept 1.svg" alt="">
+                <h5>Phone Number :
+                </h5>
+                <h4>(+62) 123-321-543</h4>
+              </div>
+              <div class="rounded-2xl bg-amber-50 py-10 px-8">
+                <img src="./Images/direct 1.svg" alt="">
+                <h5>Email :
+
+                </h5>
+                <h4>hockeys@support.com</h4>
+              </div>
+              <div class="rounded-2xl bg-cyan-200 py-10 px-8">
+                <img src="./Images/google-maps 1.svg" alt="">
+                <h5>Location :
+
+                </h5>
+                <h4>152/1 Mohakhali Wireless Gate</h4>
+              </div>
+
+
+
+            </div>
           </div>
 
-        <div class="mx-auto max-w-screen-xl  px-8 py-10 sm:px-2 lg:px-4">
-            <div class="grid grid-cols-1 shadow-md gap-x-8 gap-y-8  lg:grid-cols-5 border-solid border-2 p-10">
-              <div class="lg:col-span-2 lg:py-4">
-                
-        
-                <div class="flex flex-col  gap-8  ">
-                  <div class=" rounded-2xl bg-lime-100 py-10 px-8">
-                    <img src="./Images/3d-accept 1.svg" alt="">
-                    <h5>Phone Number : 
-                      </h5>
-                      <h4>(+62) 123-321-543</h4>
-                  </div>
-                  <div class="rounded-2xl bg-amber-50 py-10 px-8">
-                    <img src="./Images/direct 1.svg" alt="">
-                    <h5>Email : 
-                       
-                      </h5>
-                      <h4>hockeys@support.com</h4>
-                  </div>
-                  <div class="rounded-2xl bg-cyan-200 py-10 px-8">
-                    <img src="./Images/google-maps 1.svg" alt="">
-                    <h5>Location : 
-                       
-                      </h5>
-                      <h4>152/1 Mohakhali Wireless Gate</h4>
-                  </div>
-                  
-        
-                  
+          <div class="flex-col justify-center items-center bg-white p-4  lg:col-span-3 lg:p-5 sm:col-span-2">
+            <form action="" class="space-y-2">
+
+              <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                <div>
+                  <label class="text-xl text-[#131318]" for="name">Your Name</label>
+                  <input class="w-full rounded-lg border-gray-200 bg-[#13131808] p-3 text-sm"
+                    placeholder="Enter Your Name" type="text" id="name" />
+                </div>
+                <div>
+                  <label class="text-xl text-[#131318]" for="email">Email</label>
+                  <input class="w-full rounded-lg border-gray-200 bg-[#13131808] p-3 text-sm"
+                    placeholder="Email address" type="email" id="email" />
+                </div>
+
+
+              </div>
+
+              <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                <div>
+                  <label class="text-xl text-[#131318]" for="subjects">Subjects</label>
+                  <input class="w-full rounded-lg border-gray-200 bg-[#13131808] p-3 text-sm" placeholder="Subjects"
+                    type="text" id="subjects" />
+                </div>
+
+                <div>
+                  <label class="text-xl text-[#131318]" for="phone">Phone</label>
+                  <input class="w-full rounded-lg border-gray-200 bg-[#13131808] p-3 text-sm" placeholder="Phone Number"
+                    type="tel" id="phone" />
                 </div>
               </div>
-        
-              <div class="flex-col justify-center items-center bg-white p-4  lg:col-span-3 lg:p-5 sm:col-span-2">
-                <form action="" class="space-y-2">
-                  
-                  <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                    <div>
-                      <label class="text-xl text-[#131318]" for="name">Your Name</label>
-                      <input
-                        class="w-full rounded-lg border-gray-200 bg-[#13131808] p-3 text-sm"
-                        placeholder="Enter Your Name"
-                        type="text"
-                        id="name"
-                      />
-                    </div>
-                    <div>
-                      <label class="text-xl text-[#131318]" for="email">Email</label>
-                      <input
-                        class="w-full rounded-lg border-gray-200 bg-[#13131808] p-3 text-sm"
-                        placeholder="Email address"
-                        type="email"
-                        id="email"
-                      />
-                    </div>
-        
-                    
-                  </div>
-                  
-                  <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                    <div>
-                      <label class="text-xl text-[#131318]" for="subjects">Subjects</label>
-                      <input
-                        class="w-full rounded-lg border-gray-200 bg-[#13131808] p-3 text-sm"
-                        placeholder="Subjects"
-                        type="text"
-                        id="subjects"
-                      />
-                    </div>
-        
-                    <div>
-                      <label class="text-xl text-[#131318]" for="phone">Phone</label>
-                      <input
-                        class="w-full rounded-lg border-gray-200 bg-[#13131808] p-3 text-sm"
-                        placeholder="Phone Number"
-                        type="tel"
-                        id="phone"
-                      />
-                    </div>
-                  </div>
-        
-                  
-        
-                  <div>
-                    <label class="text-xl text-[#131318]" for="message">Message</label>
-        
-                    <textarea
-                      class="w-full rounded-lg border-gray-200 bg-[#13131808] p-3 text-sm"
-                      placeholder="Message"
-                      rows="15"
-                      id="message"
-                    ></textarea>
-                  </div>
-        
-                  <div class="mt-4">
-                    <button class="btn btn-block bg-red-600 text-white">Send Message</button>
-                    
-                  </div>
-                </form>
+
+
+
+              <div>
+                <label class="text-xl text-[#131318]" for="message">Message</label>
+
+                <textarea class="w-full rounded-lg border-gray-200 bg-[#13131808] p-3 text-sm" placeholder="Message"
+                  rows="15" id="message"></textarea>
               </div>
-            </div>
 
-        
-      </div>
-    </section>
+              <div class="mt-4">
+                <button class="btn btn-block bg-red-600 text-white">Send Message</button>
 
-    <!-- Social Media  -->
-    <section>
-        <div class="">
-            <h1 class="text-4xl mb-2 font-semibold text-center">
-                Social Media
-            </h1>
-            
-          </div>
-      <!-- Social media icons container -->
-
-      <div class="mb-10 flex justify-center py-5">
-        <a
-          href="#!"
-          type="button"
-          class="m-1 h-9 w-9 rounded-full border-2 border-black uppercase leading-normal text-black transition duration-150 ease-in-out hover:bg-red hover:bg-opacity-5 focus:outline-none focus:ring-0"
-          data-te-ripple-init
-          data-te-ripple-color="light"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="mx-auto h-full w-4"
-            fill="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
-            />
-          </svg>
-        </a>
-
-        <a
-          href="#!"
-          type="button"
-          class="m-1 h-9 w-9 rounded-full border-2 border-black uppercase leading-normal text-black transition duration-150 ease-in-out hover:bg-red hover:bg-opacity-5 focus:outline-none focus:ring-0"
-          data-te-ripple-init
-          data-te-ripple-color="light"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="mx-auto h-full w-4"
-            fill="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
-            />
-          </svg>
-        </a>
-
-        <a
-          href="#!"
-          type="button"
-          class="m-1 h-9 w-9 rounded-full border-2 border-black uppercase leading-normal text-black transition duration-150 ease-in-out hover:bg-red hover:bg-opacity-5 focus:outline-none focus:ring-0"
-          data-te-ripple-init
-          data-te-ripple-color="light"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="mx-auto h-full w-4"
-            fill="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M7 11v2.4h3.97c-.16 1.029-1.2 3.02-3.97 3.02-2.39 0-4.34-1.979-4.34-4.42 0-2.44 1.95-4.42 4.34-4.42 1.36 0 2.27.58 2.79 1.08l1.9-1.83c-1.22-1.14-2.8-1.83-4.69-1.83-3.87 0-7 3.13-7 7s3.13 7 7 7c4.04 0 6.721-2.84 6.721-6.84 0-.46-.051-.81-.111-1.16h-6.61zm0 0 17 2h-3v3h-2v-3h-3v-2h3v-3h2v3h3v2z"
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-            />
-          </svg>
-        </a>
-
-        <a
-          href="#!"
-          type="button"
-          class="m-1 h-9 w-9 rounded-full border-2 border-black uppercase leading-normal text-black transition duration-150 ease-in-out hover:bg-red hover:bg-opacity-5 focus:outline-none focus:ring-0"
-          data-te-ripple-init
-          data-te-ripple-color="light"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="mx-auto h-full w-4"
-            fill="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
-            />
-          </svg>
-        </a>
-
-        <a
-          href="#!"
-          type="button"
-          class="m-1 h-9 w-9 rounded-full border-2 border-black uppercase leading-normal text-black transition duration-150 ease-in-out hover:bg-red hover:bg-opacity-5 focus:outline-none focus:ring-0"
-          data-te-ripple-init
-          data-te-ripple-color="light"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="mx-auto h-full w-4"
-            fill="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
-            />
-          </svg>
-        </a>
-
-        <a
-          href="#!"
-          type="button"
-          class="m-1 h-9 w-9 rounded-full border-2 border-black uppercase leading-normal text-black transition duration-150 ease-in-out hover:bg-red hover:bg-opacity-5 focus:outline-none focus:ring-0"
-          data-te-ripple-init
-          data-te-ripple-color="light"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="mx-auto h-full w-4"
-            fill="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
-            />
-          </svg>
-        </a>
-      </div>
-    </section>
-
-    <!-- footer section  -->
-    <footer
-      class="flex flex-col items-center bg-neutral-900 text-center text-white "
-    >
-      <div class="container px-6 pt-6">
-        <!-- Links section -->
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 py-20">
-          <div class="mb-6">
-            <h5 class="mb-2.5 font-bold uppercase text-left">Get In Touch</h5>
-            <p class="text-left pb-4">Dit amet consectetur. Condimentum  adipiscing aliquam turpis placerat dolor.</p>
-
-
-            <ul class="mb-0 list-none text-left lowercase">
-              <li class="">
-                <a href="#!" class=" text-red lowercase"><i class="fa-regular fa-envelope"> hockeys@support.com</i></a>
-              </li>
-              <li>
-                <a href="#!" class="text-red"><i class="fa-solid fa-phone"> (+62) 123-321-543</i></a>
-              </li>
-              
-            </ul>
-          </div>
-
-          <div class="mb-6">
-            <h5 class="mb-2.5 font-bold uppercase ">Company</h5>
-
-            <ul class="mb-0 list-none">
-              <li>
-                <a href="#!" class="text-white">About Us</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Leadership</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Careers</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">News & Articles</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Legal Notice</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="mb-6">
-            <h5 class="mb-2.5 font-bold uppercase">Support</h5>
-
-            <ul class="mb-0 list-none">
-              <li>
-                <a href="#!" class="text-white">Help Center</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">FAQ</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Ticket Support</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Contact Us</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="mb-6">
-            <h5 class="mb-2.5 font-bold uppercase">Services</h5>
-
-            <ul class="mb list-none">
-              <li>
-                <a href="#!" class="text-white">Academy </a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Group Lesson</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Private Lesson</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Hockeys for kids</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Hockeys for Adult</a>
-              </li>
-            </ul>
+              </div>
+            </form>
           </div>
         </div>
-      </div>
 
-      <!-- Copyright section -->
-      <div
-        class="w-full p-4 text-center"
-        style="background-color: rgba(0, 0, 0, 0.2)"
-      >
-        © 2024 Copyright:
-        <a class="text-white" href="#">S.mrong</a>
+
       </div>
-    </footer>
-  </body>
+  </section>
+
+  <!-- Social Media  -->
+  <section>
+    <div class="">
+      <h1 class="text-4xl mb-2 font-semibold text-center">
+        Social Media
+      </h1>
+
+    </div>
+    <!-- Social media icons container -->
+
+    <div class="mb-10 flex justify-center py-5">
+      <a href="#!" type="button"
+        class="m-1 h-9 w-9 rounded-full border-2 border-black uppercase leading-normal text-black transition duration-150 ease-in-out hover:bg-red hover:bg-opacity-5 focus:outline-none focus:ring-0"
+        data-te-ripple-init data-te-ripple-color="light">
+        <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto h-full w-4" fill="currentColor" viewBox="0 0 24 24">
+          <path
+            d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+        </svg>
+      </a>
+
+      <a href="#!" type="button"
+        class="m-1 h-9 w-9 rounded-full border-2 border-black uppercase leading-normal text-black transition duration-150 ease-in-out hover:bg-red hover:bg-opacity-5 focus:outline-none focus:ring-0"
+        data-te-ripple-init data-te-ripple-color="light">
+        <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto h-full w-4" fill="currentColor" viewBox="0 0 24 24">
+          <path
+            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+        </svg>
+      </a>
+
+      <a href="#!" type="button"
+        class="m-1 h-9 w-9 rounded-full border-2 border-black uppercase leading-normal text-black transition duration-150 ease-in-out hover:bg-red hover:bg-opacity-5 focus:outline-none focus:ring-0"
+        data-te-ripple-init data-te-ripple-color="light">
+        <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto h-full w-4" fill="currentColor" viewBox="0 0 24 24">
+          <path
+            d="M7 11v2.4h3.97c-.16 1.029-1.2 3.02-3.97 3.02-2.39 0-4.34-1.979-4.34-4.42 0-2.44 1.95-4.42 4.34-4.42 1.36 0 2.27.58 2.79 1.08l1.9-1.83c-1.22-1.14-2.8-1.83-4.69-1.83-3.87 0-7 3.13-7 7s3.13 7 7 7c4.04 0 6.721-2.84 6.721-6.84 0-.46-.051-.81-.111-1.16h-6.61zm0 0 17 2h-3v3h-2v-3h-3v-2h3v-3h2v3h3v2z"
+            fill-rule="evenodd" clip-rule="evenodd" />
+        </svg>
+      </a>
+
+      <a href="#!" type="button"
+        class="m-1 h-9 w-9 rounded-full border-2 border-black uppercase leading-normal text-black transition duration-150 ease-in-out hover:bg-red hover:bg-opacity-5 focus:outline-none focus:ring-0"
+        data-te-ripple-init data-te-ripple-color="light">
+        <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto h-full w-4" fill="currentColor" viewBox="0 0 24 24">
+          <path
+            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+        </svg>
+      </a>
+
+      <a href="#!" type="button"
+        class="m-1 h-9 w-9 rounded-full border-2 border-black uppercase leading-normal text-black transition duration-150 ease-in-out hover:bg-red hover:bg-opacity-5 focus:outline-none focus:ring-0"
+        data-te-ripple-init data-te-ripple-color="light">
+        <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto h-full w-4" fill="currentColor" viewBox="0 0 24 24">
+          <path
+            d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+        </svg>
+      </a>
+
+      <a href="#!" type="button"
+        class="m-1 h-9 w-9 rounded-full border-2 border-black uppercase leading-normal text-black transition duration-150 ease-in-out hover:bg-red hover:bg-opacity-5 focus:outline-none focus:ring-0"
+        data-te-ripple-init data-te-ripple-color="light">
+        <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto h-full w-4" fill="currentColor" viewBox="0 0 24 24">
+          <path
+            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- footer section  -->
+  <footer class="flex flex-col items-center bg-neutral-900 text-center text-white ">
+    <div class="container px-6 pt-6">
+      <!-- Links section -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-4  py-20">
+        <div class="mb-6">
+          <h5 class="mb-2.5 font-bold uppercase text-center">Get In Touch</h5>
+          <p class="text-center pb-4">Dit amet consectetur. Condimentum adipiscing aliquam turpis placerat dolor.</p>
+
+
+          <ul class="mb-0 list-none text-center lowercase">
+            <li class="">
+              <a href="#!" class=" text-red lowercase"><i class="fa-regular fa-envelope"> </i> hockeys@support.com</a>
+            </li>
+            <li>
+              <a href="#!" class="text-red"><i class="fa-solid fa-phone"> </i> (+62) 123-321-543</a>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="mb-6">
+          <h5 class="mb-2.5 font-bold uppercase ">Company</h5>
+
+          <ul class="mb-0 list-none">
+            <li>
+              <a href="#!" class="text-white">About Us</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Leadership</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Careers</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">News & Articles</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Legal Notice</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mb-6">
+          <h5 class="mb-2.5 font-bold uppercase">Support</h5>
+
+          <ul class="mb-0 list-none">
+            <li>
+              <a href="#!" class="text-white">Help Center</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">FAQ</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Ticket Support</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mb-6">
+          <h5 class="mb-2.5 font-bold uppercase">Services</h5>
+
+          <ul class="mb list-none">
+            <li>
+              <a href="#!" class="text-white">Academy </a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Group Lesson</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Private Lesson</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Hockeys for kids</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Hockeys for Adult</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright section -->
+    <div class="w-full p-4 text-center" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2024 Copyright:
+      <a class="text-white" href="#">S.mrong</a>
+    </div>
+  </footer>
+</body>
+
 </html>
